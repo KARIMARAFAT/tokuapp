@@ -4,6 +4,7 @@ import 'package:tokuapp/features/colors/screen/view/colors_screen.dart';
 import 'package:tokuapp/features/family_memebers/screen/view/family_screen.dart';
 import 'package:tokuapp/features/home/widgets/custom_container.dart';
 import 'package:tokuapp/features/members/screen/view/members_screen.dart';
+import 'package:tokuapp/features/pharses/screen/view/pharses_screen.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -51,7 +52,12 @@ class HomeScreen extends StatelessWidget {
           CustomContainer(
             text: 'Phrases',
             containerBg: Color(0xff47A5CB),
-            ontap: () {},
+            ontap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => PharsesScreen()),
+              );
+            },
           ),
         ],
       ),

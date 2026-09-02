@@ -85,7 +85,7 @@ class MembersScreen extends StatelessWidget {
         itemCount: numbers.length,
         itemBuilder: (context, index) {
           return Item(
-            numberModel: numbers[index],
+            itemModel: numbers[index],
             containerColor: Color(0xffF99531),
           );
         },

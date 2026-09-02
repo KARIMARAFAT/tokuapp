@@ -76,7 +76,7 @@ class ColorsScreen extends StatelessWidget {
         itemCount: members.length,
         itemBuilder: (context, index) {
           return Item(
-            numberModel: members[index],
+            itemModel: members[index],
             containerColor: Color(0xff7D40A2),
           );
         },

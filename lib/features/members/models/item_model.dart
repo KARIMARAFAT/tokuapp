@@ -1,13 +1,13 @@
 import 'package:audioplayers/audioplayers.dart';
 
 class ItemModel {
-  final String imagePath;
+  final String? imagePath;
   final String jpName;
   final String enName;
   final String sound;
 
   const ItemModel({
-    required this.imagePath,
+    this.imagePath,
     required this.jpName,
     required this.enName,
     required this.sound,
